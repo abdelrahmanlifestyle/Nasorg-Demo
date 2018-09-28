@@ -1,0 +1,26 @@
+:host {
+    cursor: pointer;
+}
+
+p {
+    width: fit-content !important;
+}
+
+.paragraph {
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    margin: 0 7.5px;
+    width: 94px;
+    height: 10px;
+    font-size: 19px;
+    line-height: 31px;
+    align-items: center;
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.29);
+}
+
+.icon {
+    width: 23px;
+    height: 25px;
+    margin-right: 8px;
+}

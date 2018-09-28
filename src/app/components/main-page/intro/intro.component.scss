@@ -1,0 +1,103 @@
+.main-container {
+    width: 60%;
+    margin: 0 12%;
+    padding-top: 2%;
+}
+
+.header {
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 1;
+    font-family: "Proxima Nova Bold"
+}
+
+.first-paragraph {
+    color: #ffffff;
+    font-family: "Proxima Nova Light";
+    font-weight: 500;
+    font-size: 59px;
+    line-height: 61px;
+}
+
+.second-paragraph {
+    margin-top: 26px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 33px;
+    color: #ffffff;
+    font-family: "Proxima Nova Light";
+    font-weight: 300;
+}
+
+.btn-container {
+    margin-top: 50px;
+    display: flex;
+}
+
+:host ::ng-deep app-rounded-button>p {
+    color: #4753ff;
+    font-family: "Proxima Nova Bold";
+}
+
+:host ::ng-deep #products>p {
+    color: #4753ff;
+}
+
+.first-paragraph,
+.second-paragraph,
+app-rounded-button {
+    -webkit-animation-name: fadeInUp;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+#request {
+    visibility: hidden;
+    -webkit-animation-name: fadeInUp;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Standard syntax */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+@media(max-width:1300px) {
+    .btn-container {
+        margin-bottom: 5%;
+    }
+}

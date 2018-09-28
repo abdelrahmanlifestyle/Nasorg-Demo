@@ -1,0 +1,74 @@
+:host {
+    position: relative;
+    display: flex;
+    flex: 1 0;
+    min-height: max-content;
+}
+
+.main-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 calc(100% + 40px);
+}
+
+.background-colors {
+    width: 100%;
+    z-index: -3;
+    background-clip: border-box;
+    background-origin: padding-box;
+    outline-style: none;
+    outline-width: 0px;
+    position: absolute;
+}
+
+.background-colors-img {
+    width: 100%;
+}
+
+.tablet {
+    width: 70%;
+    min-height: 1067px;
+    z-index: -2;
+    background-clip: border-box;
+    background-origin: padding-box;
+    outline-style: none;
+    outline-width: 0px;
+    position: absolute;
+    top: 86px;
+    left: 30%;
+    overflow: hidden;
+}
+
+.tab-img {
+    width: 115%;
+}
+
+.beacon {
+    width: 343px;
+    margin-top: 35%;
+    z-index: -2;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-y: 88%;
+    outline-style: none;
+    outline-width: 0px;
+    position: absolute;
+}
+
+.beacon-img {
+    width: 100%;
+}
+
+@media(max-width:1300px) {
+    .background-colors,
+    .beacon,
+    .tablet {
+        display: none;
+    }
+    .main-section {
+        background-image: url("../../../assets/images/main-section-bg-sm.png");
+        background-repeat: no-repeat;
+        flex-basis: unset;
+    }
+}

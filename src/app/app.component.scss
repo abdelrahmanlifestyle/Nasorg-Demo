@@ -1,0 +1,13 @@
+:host {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+app-main-page {
+    display: flex;
+    flex-direction: column;
+    // flex: 1 0 auto;
+}
