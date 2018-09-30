@@ -49,13 +49,13 @@
 }
 
 :host ::ng-deep app-rounded-button>.paragraph:hover {
-    background-color: #0eb2e8 !important;
+    background-color: #40cbfa !important;
     color: #fff !important;
 }
 
 :host ::ng-deep app-rounded-button.req>.paragraph:hover {
     background-color: #fff !important;
-    color: #0eb2e8 !important;
+    color: #4753ff !important;
     > img{
         content: url("../../../../assets/images/pen-icon-hover.png");
     }
