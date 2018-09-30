@@ -40,6 +40,27 @@
     font-family: "Proxima Nova Light";
 }
 
+:host ::ng-deep app-rounded-button>.paragraph {
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+
+:host ::ng-deep app-rounded-button>.paragraph:hover {
+    background-color: #0eb2e8 !important;
+    color: #fff !important;
+}
+
+:host ::ng-deep app-rounded-button.req>.paragraph:hover {
+    background-color: #fff !important;
+    color: #0eb2e8 !important;
+    > img{
+        content: url("../../../../assets/images/pen-icon-hover.png");
+    }
+}
+
 nav {
     width: 100%;
     background-color: transparent !important;
