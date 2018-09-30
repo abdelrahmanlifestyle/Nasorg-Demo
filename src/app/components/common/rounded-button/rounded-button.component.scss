@@ -24,3 +24,9 @@ p {
     height: 25px;
     margin-right: 8px;
 }
+
+@media(max-width:480px) {
+    .paragraph {
+        height: 50px !important;
+    }
+}

@@ -1,7 +1,12 @@
+:host {
+    height: max-content;
+}
+
 .main-container {
     width: 60%;
     margin: 0 12%;
     padding-top: 2%;
+    height: max-content;
 }
 
 .header {
@@ -9,6 +14,10 @@
     color: #ffffff;
     line-height: 1;
     font-family: "Proxima Nova Bold"
+}
+
+.mobile-view-only {
+    display: none;
 }
 
 .first-paragraph {
@@ -99,5 +108,52 @@ app-rounded-button {
 @media(max-width:1300px) {
     .btn-container {
         margin-bottom: 5%;
+    }
+    p{
+        display: unset;
+    }
+    .main-container{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media(max-width:480px) {
+    .main-container {
+        width: 90%;
+        margin: 0 5%;
+        text-align: center;
+    }
+    .header {
+        font-size: 24px;
+    }
+    .first-paragraph {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    p {
+        display: unset;
+    }
+    .second-paragraph {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .mobile-view-only {
+        display: block;
+        width: 100%;
+        -webkit-animation-name: fadeInUp;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+    }
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+        >* {
+            margin: 10px 0;
+        }
     }
 }
